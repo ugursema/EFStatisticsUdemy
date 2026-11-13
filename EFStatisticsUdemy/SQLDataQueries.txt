@@ -1,0 +1,102 @@
+﻿USE [EFStatisticsUdemy]
+GO
+
+-- 1. CATEGORY (20 Kayıt)
+INSERT INTO Tbl_Category (CategoryName)
+VALUES
+('Bilgisayar'),
+('Telefon'),
+('Tablet'),
+('Televizyon'),
+('Beyaz Eşya'),
+('Küçük Ev Aletleri'),
+('Kulaklık'),
+('Hoparlör'),
+('Kamera'),
+('Oyun Konsolu'),
+('Yazıcı'),
+('Monitör'),
+('Klavye'),
+('Mouse'),
+('Akıllı Saat'),
+('Aksesuar'),
+('Depolama'),
+('Ağ Ürünleri'),
+('Gaming'),
+('Ofis Ürünleri');
+
+-- 2. CUSTOMER (20 Kayıt)
+INSERT INTO Tbl_Customer (CustomerName, CustomerCountry)
+VALUES
+('Ahmet Yılmaz', 'Türkiye'),
+('Mehmet Demir', 'Türkiye'),
+('Ayşe Kaya', 'Türkiye'),
+('Fatma Çelik', 'Almanya'),
+('Ali Şahin', 'Türkiye'),
+('Zeynep Arslan', 'Fransa'),
+('Mustafa Koç', 'Türkiye'),
+('Elif Aydın', 'İngiltere'),
+('Can Yıldız', 'Türkiye'),
+('Merve Özkan', 'Hollanda'),
+('Burak Kurt', 'Türkiye'),
+('Ece Polat', 'İtalya'),
+('Emre Doğan', 'Türkiye'),
+('Deniz Aksoy', 'İspanya'),
+('Serkan Yalçın', 'Türkiye'),
+('Selin Güneş', 'Belçika'),
+('Onur Kılıç', 'Türkiye'),
+('Derya Aslan', 'ABD'),
+('Kaan Şimşek', 'Türkiye'),
+('Buse Öztürk', 'Kanada');
+
+-- 3. PRODUCT (20 Kayıt)
+INSERT INTO Tbl_Product
+(ProductName, ProductStock, ProductPrice, ProductStatus, CategoryId)
+VALUES
+('Laptop i7', 25, 35000, 1, 1),
+('Samsung Telefon', 40, 28000, 1, 2),
+('iPad Tablet', 30, 22000, 1, 3),
+('LG Televizyon', 15, 42000, 1, 4),
+('Buzdolabı', 10, 30000, 1, 5),
+('Kahve Makinesi', 50, 4500, 1, 6),
+('Bluetooth Kulaklık', 60, 2500, 1, 7),
+('JBL Hoparlör', 35, 5500, 1, 8),
+('Canon Kamera', 12, 18000, 1, 9),
+('PlayStation 5', 20, 28000, 1, 10),
+('HP Yazıcı', 18, 7500, 1, 11),
+('Samsung Monitör', 25, 9000, 1, 12),
+('Mekanik Klavye', 45, 3200, 1, 13),
+('Gaming Mouse', 70, 1800, 1, 14),
+('Apple Watch', 22, 14000, 1, 15),
+('Telefon Kılıfı', 100, 500, 1, 16),
+('1TB SSD', 40, 4500, 1, 17),
+('Wi-Fi Router', 30, 2200, 1, 18),
+('Gaming Kulaklık', 28, 3500, 1, 19),
+('Ofis Sandalyesi', 15, 6500, 1, 20);
+
+-- 4. ORDER (20 Kayıt)
+INSERT INTO Tbl_Order
+(CustomerId, ProductId, [Count], UnitPrice, TotalPrice)
+VALUES
+(1, 1, 1, 35000, 35000),
+(2, 2, 2, 28000, 56000),
+(3, 3, 1, 22000, 22000),
+(4, 4, 1, 42000, 42000),
+(5, 5, 1, 30000, 30000),
+(6, 6, 2, 4500, 9000),
+(7, 7, 3, 2500, 7500),
+(8, 8, 1, 5500, 5500),
+(9, 9, 1, 18000, 18000),
+(10, 10, 1, 28000, 28000),
+(11, 11, 2, 7500, 15000),
+(12, 12, 1, 9000, 9000),
+(13, 13, 2, 3200, 6400),
+(14, 14, 3, 1800, 5400),
+(15, 15, 1, 14000, 14000),
+(16, 16, 4, 500, 2000),
+(17, 17, 2, 4500, 9000),
+(18, 18, 1, 2200, 2200),
+(19, 19, 2, 3500, 7000),
+(20, 20, 1, 6500, 6500);
+
+GO
