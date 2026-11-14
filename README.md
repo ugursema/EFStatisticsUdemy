@@ -8,7 +8,7 @@ Uygulama, SQL Server veritabanında bulunan veriler üzerinden çeşitli istatis
 
 ## 🖥️ Uygulamadan Görüntüler
 
-![Entity Framework İstatistik Uygulaması](images/FormScreen.png)
+![Entity Framework İstatistik Uygulaması](./images/FormScreen.png)
 
 ## 🚀 Proje Özellikleri
 
